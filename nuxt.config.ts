@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     "/admin/**": { headers: { "X-Robots-Tag": "noindex, nofollow" } },
   },
   nitro: {
+    preset: "static",
     prerender: {
       crawlLinks: true,
       routes: [
