@@ -1,0 +1,61 @@
+{
+  "name": "inPrime.",
+  "descriptor": "PHOTOGRAPHY & FILM",
+  "location": "Indonesia",
+  "email": "",
+  "whatsapp": "",
+  "instagram": "",
+  "heroLine1": "WE FRAME",
+  "heroLine2": "WHAT YOU",
+  "heroAccent": "feel.",
+  "intro": "Cerita yang terasa. Gambar yang tinggal. Kami merekam manusia, tempat, dan segala hal di antaranya — dalam foto dan film.",
+  "about": "Berawal dari fotografi, tumbuh menjadi kolaborasi. Kami adalah studio independen yang mempertemukan fotografer, videografer, dan editor dalam satu proses kreatif. Dekat dengan cerita Anda, dari percakapan pertama sampai frame terakhir.",
+  "heroImage": "https://images.unsplash.com/photo-1519741497674-611481863552",
+  "heroAlt": "Sepasang pengantin dengan buket bunga dalam cahaya matahari hangat",
+  "studioImage": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d",
+  "reelUrl": "",
+  "services": [
+    {
+      "title": "Wedding & intimate stories",
+      "tag": "01 / PEOPLE",
+      "description": "Dari tatapan kecil sampai pelukan paling hangat. Dokumentasi pernikahan dan prewedding dengan pendekatan yang tenang, personal, dan jujur.",
+      "deliverables": "Wedding photography · Wedding film · Prewedding"
+    },
+    {
+      "title": "Brand & commercial",
+      "tag": "02 / PURPOSE",
+      "description": "Foto dan film yang berbicara dengan karakter brand Anda. Kami menyusun konsep, produksi, dan hasil akhir untuk kebutuhan kampanye maupun keseharian bisnis.",
+      "deliverables": "Campaign · Product photography · Brand film"
+    },
+    {
+      "title": "Portrait & lifestyle",
+      "tag": "03 / PERSONALITY",
+      "description": "Ruang untuk menjadi diri sendiri. Potret personal, keluarga, dan editorial dengan arahan yang ringan dan perhatian pada detail.",
+      "deliverables": "Portrait · Editorial · Family session"
+    },
+    {
+      "title": "Film & post-production",
+      "tag": "04 / MOTION",
+      "description": "Cerita dibentuk kembali di ruang editing. Penyuntingan, warna, dan suara dirangkai agar setiap adegan memiliki alasan untuk ada.",
+      "deliverables": "Videography · Video editing · Color grading"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Bagaimana cara memulai proyek?",
+      "answer": "Ceritakan jenis sesi, lokasi, dan perkiraan tanggal melalui halaman kontak. Brief ini menjadi bahan diskusi untuk menyusun pendekatan, kebutuhan tim, dan penawaran."
+    },
+    {
+      "question": "Apakah foto dan video bisa dalam satu paket?",
+      "answer": "Bisa. Fotografer, videografer, dan editor bekerja dalam satu proses agar arah visualnya selaras. Cakupan produksi dan hasil akhir ditentukan dalam penawaran."
+    },
+    {
+      "question": "Apakah menerima proyek di luar kota?",
+      "answer": "Kami terbuka untuk perjalanan. Sampaikan lokasi Anda saat mengisi brief agar kebutuhan transportasi dan akomodasi dapat diperhitungkan."
+    },
+    {
+      "question": "Berapa lama proses editing dan penyerahan?",
+      "answer": "Jadwal ditentukan berdasarkan skala proyek dan jenis hasil akhir. Waktu penyerahan, jumlah revisi, dan format file akan disepakati sebelum produksi dimulai."
+    }
+  ]
+}

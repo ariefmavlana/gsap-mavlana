@@ -1,0 +1,77 @@
+# Local editing: npm run cms (localhost only). Production requires GitHub OAuth.
+backend:
+  name: github
+  repo: ariefmavlana/gsap-mavlana
+  branch: main
+local_backend:
+  url: http://localhost:8081/api/v1
+media_folder: public/uploads
+public_folder: /uploads
+locale: en
+editor:
+  preview: false
+collections:
+  - name: studio
+    label: Studio content
+    files:
+      - name: settings
+        label: Identity, homepage & services
+        file: content/site.json
+        format: json
+        fields:
+          - { label: Studio name, name: name, widget: string }
+          - { label: Descriptor, name: descriptor, widget: string }
+          - { label: Location, name: location, widget: string }
+          - { label: Email, name: email, widget: string, required: false, default: "" }
+          - { label: "WhatsApp (country code, digits only)", name: whatsapp, widget: string, required: false, default: "", pattern: ['^(?:[1-9]\d{7,14})?$', 'Use 62812..., without + or spaces'] }
+          - { label: Instagram HTTPS URL, name: instagram, widget: string, required: false, default: "" }
+          - { label: Hero line 1, name: heroLine1, widget: string }
+          - { label: Hero line 2, name: heroLine2, widget: string }
+          - { label: Hero accent, name: heroAccent, widget: string }
+          - { label: Introduction, name: intro, widget: text }
+          - { label: About the studio, name: about, widget: text }
+          - { label: Hero photograph, name: heroImage, widget: image, hint: 'Upload WebP/JPEG or use images.unsplash.com/photo-... without query parameters.' }
+          - { label: Hero image description, name: heroAlt, widget: string }
+          - { label: Studio photograph, name: studioImage, widget: image }
+          - { label: Showreel HTTPS MP4 URL, name: reelUrl, widget: string, required: false, default: "", hint: 'Direct video file URL. Leave blank to display the clearly labeled Unsplash motion study.' }
+          - name: services
+            label: Services
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Label, name: tag, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Deliverables, name: deliverables, widget: string }
+          - name: faq
+            label: Frequently asked questions
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+      - name: portfolio
+        label: Portfolio & galleries
+        file: content/portfolio.json
+        format: json
+        fields:
+          - name: projects
+            label: Projects
+            widget: list
+            min: 1
+            summary: '{{fields.title}} — {{fields.category}}'
+            fields:
+              - { label: URL slug, name: slug, widget: string, pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Lowercase words separated by hyphens; must be unique.'] }
+              - { label: Title, name: title, widget: string }
+              - { label: Category, name: category, widget: select, options: [Wedding, Portrait, Commercial, Film] }
+              - { label: Editorial label, name: label, widget: string }
+              - { label: Cover, name: image, widget: image }
+              - { label: Cover description (alt text), name: alt, widget: string }
+              - { label: Project story, name: description, widget: text }
+              - { label: Year or edition, name: year, widget: string }
+              - { label: Reference study (not client work), name: isStudy, widget: boolean, default: true }
+              - { label: Photographer credit, name: credit, widget: string }
+              - { label: Credit HTTPS URL, name: creditUrl, widget: string, required: false, default: "" }
+              - name: gallery
+                label: Gallery photographs
+                widget: list
+                min: 1
+                field: { label: Photograph, name: image, widget: image }

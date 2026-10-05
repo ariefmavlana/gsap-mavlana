@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "slug": "a-day-to-remember",
+      "title": "A day to remember",
+      "category": "Wedding",
+      "label": "INTIMATE WEDDING",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552",
+      "alt": "Pengantin dengan buket bunga diterangi cahaya matahari hangat",
+      "description": "Sebuah studi visual tentang kebersamaan. Cahaya alami, gestur yang tidak dibuat-buat, dan suasana hangat menjadi arah untuk dokumentasi hari yang personal.",
+      "year": "VISUAL STUDY",
+      "credit": "Unsplash",
+      "creditUrl": "https://unsplash.com/photos/ULHxWq8reao",
+      "gallery": [
+        "https://images.unsplash.com/photo-1519741497674-611481863552",
+        "https://images.unsplash.com/photo-1511285560929-80b456fea0bc"
+      ],
+      "isStudy": true
+    },
+    {
+      "slug": "in-the-quiet",
+      "title": "In the quiet",
+      "category": "Portrait",
+      "label": "PORTRAIT / EDITORIAL",
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+      "alt": "Potret perempuan dengan cahaya lembut dan latar alami",
+      "description": "Ekspresi sederhana, ruang yang tenang. Studi potret ini mengeksplorasi kedekatan melalui cahaya, warna, dan komposisi yang memberi ruang pada karakter.",
+      "year": "VISUAL STUDY",
+      "credit": "Unsplash",
+      "creditUrl": "https://unsplash.com",
+      "gallery": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+      ],
+      "isStudy": true
+    },
+    {
+      "slug": "a-slower-pace",
+      "title": "A slower pace",
+      "category": "Commercial",
+      "label": "SPACES / LIFESTYLE",
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+      "alt": "Interior ruang dengan sofa, material alami, dan warna hangat",
+      "description": "Ruang memiliki ritmenya sendiri. Sebuah arah visual untuk hospitality dan interior, dengan perhatian pada tekstur, cahaya jendela, serta detail yang membentuk pengalaman.",
+      "year": "VISUAL STUDY",
+      "credit": "Unsplash",
+      "creditUrl": "https://unsplash.com",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+      ],
+      "isStudy": true
+    },
+    {
+      "slug": "somewhere-between",
+      "title": "Somewhere between",
+      "category": "Film",
+      "label": "TRAVEL / FILM DIRECTION",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+      "alt": "Danau di antara pegunungan dengan lanskap yang dramatis",
+      "description": "Perjalanan bukan hanya tentang tujuan. Studi arah film ini mengeksplorasi lanskap, perubahan cahaya, dan jeda yang membuat sebuah tempat terasa hidup. Materi saat ini berupa referensi foto, bukan film klien.",
+      "year": "VISUAL STUDY",
+      "credit": "Unsplash",
+      "creditUrl": "https://unsplash.com",
+      "gallery": [
+        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+      ],
+      "isStudy": true
+    }
+  ]
+}

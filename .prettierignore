@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+.output
+.reference
+.runtime
+.npm-cache
+public/admin/vendor
+package-lock.json

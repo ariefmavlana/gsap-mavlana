@@ -1,32 +1,40 @@
 {
-  "name": "gsap-mavlana",
+  "name": "inprime-studio",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "nuxt dev --host 127.0.0.1",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare",
+    "test": "node --test tests/content.test.mjs",
+    "check": "npm run format:check && npm run test && npm run typecheck && npm run generate && npm run test:output",
+    "format:check": "prettier --check app shared server content scripts tests nuxt.config.ts vercel.json .github/workflows/ci.yml",
+    "test:output": "node scripts/verify-output.mjs",
+    "assets": "node scripts/fetch-assets.mjs",
+    "prebuild": "npm run assets",
+    "pregenerate": "npm run assets",
+    "cms": "node scripts/cms.mjs",
+    "format": "prettier --write app shared server content scripts tests nuxt.config.ts"
+  },
+  "engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.2",
-    "@tailwindcss/vite": "^4.1.11",
-    "gsap": "^3.13.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-responsive": "^10.0.1",
-    "tailwindcss": "^4.1.11"
+    "gsap": "3.15.0",
+    "nuxt": "4.5.2",
+    "vue": "3.5.43",
+    "zod": "4.3.6"
   },
   "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "vite": "^7.0.4"
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "24.19.1",
+    "decap-server": "3.11.3",
+    "prettier": "3.8.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "~5.9.3",
+    "vue-tsc": "~3.2.5"
   }
 }
