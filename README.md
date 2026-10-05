@@ -127,4 +127,6 @@ Foto referensi menggunakan [lisensi Unsplash](https://unsplash.com/license), dis
 
 ## Pemeriksaan PR dan deployment
 
-GitHub Actions menjalankan npm run check: format Prettier, integritas konten, typecheck, static generation, serta pemeriksaan HTML/metadata/aset/JSON-LD/sitemap/404. Deploy Vercel memakai output statis tanpa Node server, Decap proxy, atau OAuth secrets. Hubungkan repository ke project Vercel agar push ke main menerbitkan perubahan berikutnya.
+GitHub Actions dan build Vercel menjalankan npm run check: format Prettier, integritas konten, typecheck, static generation, serta pemeriksaan HTML/metadata/aset/JSON-LD/sitemap/404. Deploy Vercel memakai output statis tanpa Node server, Decap proxy, atau OAuth secrets. Repository sudah terhubung ke project Vercel gsap-mavlana agar push ke main menerbitkan perubahan berikutnya.
+
+Pada rilis awal, GitHub Actions tidak dapat memulai job karena account billing lock. Rangkaian pemeriksaan yang sama dijalankan di Vercel, tanpa menghapus workflow atau mengubah proteksi branch. Pemilik akun perlu menyelesaikan masalah billing agar Actions dapat berjalan kembali.
